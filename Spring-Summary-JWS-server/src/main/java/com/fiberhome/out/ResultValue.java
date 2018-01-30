@@ -5,6 +5,7 @@ import java.lang.reflect.Field;
 
 /**
  * Description:返回结果
+ * 
  * @author sjZhang
  * @date 2018年1月30日下午5:01:58
  */
@@ -13,10 +14,6 @@ public class ResultValue implements Serializable {
 	private String requestId;
 	private String code;
 	private String message;
-
-	public ResultValue() {
-		super();
-	};
 
 	public String getRequestId() {
 		return requestId;

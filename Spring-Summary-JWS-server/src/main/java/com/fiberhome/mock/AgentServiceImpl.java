@@ -13,7 +13,17 @@ import com.fiberhome.out.ResultValue;
 public class AgentServiceImpl implements AgentService {
 
 	@Override
-	public ResultValue methodOfTest(RequestValue requestValue) throws Exception {
+	public ResultValue methodOfTest(RequestValue requestValue){
+
+		try {
+			ResultValue resultValue = new ResultValue();
+			resultValue.setCode("1");
+			resultValue.setMessage("SUCCESS");
+			resultValue.setRequestId(requestValue.getRequestId());
+			return resultValue;
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 		return null;
 	}
 

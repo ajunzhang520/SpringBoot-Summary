@@ -25,6 +25,7 @@
 		<module>Spring-Summary-tx</module>
 		<module>Spring-Summary-Starter-hbase</module>
 		<module>Spring-Summary-Starter-redis</module>
+		<module>Spring-Summary-JWS-server</module>
   </modules>
 
 	<dependencyManagement>

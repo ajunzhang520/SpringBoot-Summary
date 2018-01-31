@@ -2,20 +2,15 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.fiberhome</groupId>
-	<artifactId>Spring-Summary-tx</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
-
-	<name>Spring-Summary-tx</name>
-	<url>http://maven.apache.org</url>
-
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.6.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<groupId>com.fiberhome</groupId>
+		<artifactId>Spring-Summary-boot</artifactId>
+		<version>1.0.0</version>
 	</parent>
+
+	<artifactId>Spring-Summary-tx</artifactId>
+	<packaging>jar</packaging>
+	<name>Spring-Summary-tx</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -27,29 +22,25 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter 
-		<exclusions>
-				<exclusion>
-					<groupId>org.apache.tomcat</groupId>
-					<artifactId>tomcat-jdbc</artifactId>
-				</exclusion>
-			</exclusions>-->
-			
-		<!--mybatis Starter  -->
+			<exclusions> <exclusion> <groupId>org.apache.tomcat</groupId> <artifactId>tomcat-jdbc</artifactId> 
+			</exclusion> </exclusions> -->
+
+		<!--mybatis Starter -->
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>1.1.1</version>
 		</dependency>
-		
+
 		<!-- HikariCP连接池 -->
 		<dependency>
 			<groupId>com.zaxxer</groupId>
 			<artifactId>HikariCP</artifactId>
 			<!-- 版本号可以不用指定，Spring Boot会选用合适的版本 -->
 		</dependency>
-		
+
 		<!-- sqlserver驱动 -->
 		<dependency>
 			<groupId>com.microsoft.sqlserver</groupId>
@@ -69,4 +60,13 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 </project>

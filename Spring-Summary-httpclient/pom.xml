@@ -8,9 +8,9 @@
 		<version>1.0.0</version>
 	</parent>
 
-	<artifactId>Spring-Summary-Starter-redis</artifactId>
+	<artifactId>Spring-Summary-httpclient</artifactId>
 	<packaging>jar</packaging>
-	<name>Spring-Summary-Starter-redis</name>
+	<name>Spring-Summary-httpclient</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,27 +18,28 @@
 	</properties>
 
 	<dependencies>
-		<!-- SpringBoot引入 -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<!-- spring-boot-starter-data-redis依赖引入 -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-redis</artifactId>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>

@@ -37,6 +37,7 @@
 		<module>Spring-Summary-JWS-client</module>
 		<module>Spring-Summary-kafka</module>
 		<module>Spring-Summary-httpclient</module>
+		<module>Spring-Summary-Servlet</module>
   </modules>
 
 	<dependencyManagement>

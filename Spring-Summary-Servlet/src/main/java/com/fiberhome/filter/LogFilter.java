@@ -9,6 +9,8 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,6 +34,10 @@ public class LogFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
 		log.debug("income log filter:" + request.getRemoteHost());
+		HttpServletRequest httpRequest = (HttpServletRequest)request;
+		/**创建一个session**/
+		//HttpSession session = httpRequest.getSession(true);
+		//session.setAttribute("001Access", "001");
 		response.getWriter().write("LogFilter ADD \n");
 		chain.doFilter(request, response);
 	}

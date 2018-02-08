@@ -1,5 +1,6 @@
 package com.fiberhome.listener;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
@@ -20,6 +21,7 @@ public class MyListener implements ServletContextListener {
 	@Override
 	public void contextInitialized(ServletContextEvent sce) {
 		log.debug("MyListener start");
+		//ServletContext context = sce.getServletContext();
 	}
 
 	@Override

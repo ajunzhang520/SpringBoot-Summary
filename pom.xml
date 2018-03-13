@@ -38,6 +38,7 @@
 		<module>Spring-Summary-kafka</module>
 		<module>Spring-Summary-httpclient</module>
 		<module>Spring-Summary-Servlet</module>
+		<module>Spring-Summary-Hbase-Declaration</module>
   </modules>
 
 	<dependencyManagement>

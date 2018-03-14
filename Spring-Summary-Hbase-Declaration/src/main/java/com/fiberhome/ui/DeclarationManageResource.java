@@ -35,6 +35,8 @@ public class DeclarationManageResource {
 	/**
 	 * 第一页接口
 	 * 
+	 * 路径参数为pageSize,查询参数用Q=DECLARATIONNUM_S_LK进行模糊查询。
+	 * http://localhost:8080/goodsrisk/declaration/first/5?Q=DECLARATIONNUM_S_LK=681550
 	 * @param pageSize
 	 * @return
 	 */

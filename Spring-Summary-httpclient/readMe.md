@@ -1,1 +1,0 @@
-### 该项目主要实现用HttpUrlConnection和HttpClient发出GET和POST请求。

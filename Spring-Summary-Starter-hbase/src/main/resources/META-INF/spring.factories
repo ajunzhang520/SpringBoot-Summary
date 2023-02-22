@@ -1,2 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.fiberhome.cus.hbase.config.HbaseConfig
